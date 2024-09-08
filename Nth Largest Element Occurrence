@@ -1,0 +1,15 @@
+def nlargest(n,target,arr):
+    count=0
+    arr2=list(set((sorted(arr))))
+    if len(arr2)<target:
+        return 0
+    nthlar=arr2[::-1][target-1]
+    for i in range(len(arr)):
+        if arr[i]==nthlar:
+            count+=1
+    return count        
+    
+target=int(input())
+n=int(input())
+arr=list(map(int,input().split()))
+print(nlargest(n,target,arr))
