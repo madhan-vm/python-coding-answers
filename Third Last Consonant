@@ -1,0 +1,18 @@
+def thirdconsonant(n, string):
+    if len(string) < 3:
+        return -1
+
+    vowels = "AEIOUaeiou"
+    count = 0
+
+    for i in range(len(string) - 1, -1, -1):
+        if string[i].isalpha() and string[i] not in vowels:
+            count += 1
+            if count == 3:
+                return string[i]
+    return -1        
+
+
+n = int(input())
+string= input().strip()
+print(thirdconsonant(n, string))
