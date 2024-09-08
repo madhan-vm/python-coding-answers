@@ -1,0 +1,14 @@
+def candies(n,arr,money):
+    count=0
+    for i in range(n):
+        if arr[i]%5==0:
+            count+=1
+        elif money>=arr[i]:
+            count+=1
+            money-=arr[i]
+    return count   
+
+n=int(input())
+arr=list(map(int,input().split()))
+money=int(input())
+print(candies(n,arr,money))
