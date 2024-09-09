@@ -1,0 +1,5 @@
+H=int(input())
+V=int(input())
+V_=int(input())
+H_=H*((V//V_)*(V//V_))
+print(H_)
