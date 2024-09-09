@@ -1,0 +1,17 @@
+def bubble(n,arr):
+    for i in range(n-1):
+        swapped = False
+        for j in range(n-i-1):
+            if my_array[j] > my_array[j+1]:
+                my_array[j], my_array[j+1] = my_array[j+1], my_array[j]
+                swapped = True
+        if not swapped:
+            break
+    return (my_array) 
+n=int(input())
+if n==0:
+    print(-1)
+else:
+    my_array=list(map(int,input().split()))
+    res=bubble(n,my_array)
+    print(*res)
