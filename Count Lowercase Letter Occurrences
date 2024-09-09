@@ -1,0 +1,9 @@
+def count_occurences(S):
+    for i in range(ord('a'), ord('z') + 1):
+                   count = S.count(chr(i))
+                   if count > 0:
+                    print(f"{chr(i)}: {count}")
+
+S = input().strip()
+
+count_occurences(S)
