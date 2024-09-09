@@ -1,0 +1,12 @@
+def string(s):
+    count=0
+    maxcount=0
+    for i in s:
+        if i==".":
+            count=0
+        else:
+            count+=1
+            maxcount=max(maxcount,count)
+    return maxcount        
+s=input().strip()
+print(string(s))
