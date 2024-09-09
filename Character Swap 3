@@ -1,0 +1,19 @@
+string=input()
+ch1=input()
+ch2=input()
+res=""
+count=0
+for char in string:
+    if char==ch1:
+        res+=ch2
+        count=1
+    elif(char==ch2):
+        res+=ch1
+        count=1
+    else:
+        res+=char
+if count==0:
+    print("")
+else:
+    print(res)
+        
