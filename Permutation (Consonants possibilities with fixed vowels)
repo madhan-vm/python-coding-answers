@@ -1,0 +1,13 @@
+def fact(n):
+    if n==1:
+        return 1
+    return n*fact(n-1)
+
+
+string=input().strip()
+count=0
+vowel="aeiouAEIOU"
+for i in range(len(string)):
+    if (string[i] not in vowel) and (string[i]!=" "):
+        count+=1
+print(fact(count))        
