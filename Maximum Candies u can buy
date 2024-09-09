@@ -1,5 +1,6 @@
 def candies(n,arr,money):
     count=0
+    sorted(arr)
     for i in range(n):
         if arr[i]%5==0:
             count+=1
