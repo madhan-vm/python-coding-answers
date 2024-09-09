@@ -1,0 +1,12 @@
+n=input().strip()
+s=input().strip()
+m=n+s
+count=0
+for i in m:
+    if i==" ":
+        count+=1
+if count%2==0:
+    print("Even")
+else:
+    print("Odd")
+        
