@@ -1,0 +1,10 @@
+def occurance(string):
+    count=0
+    for i in string:
+        if i=="l":
+            count+=1
+    return count
+        
+
+string=input()
+print (occurance(string))
