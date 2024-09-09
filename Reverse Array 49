@@ -1,0 +1,11 @@
+def revarr(arr,n):
+    arr=arr[::-1]
+    sum=0
+    for i in range(n):
+        if i%2==0:
+            sum+=arr[i]
+    return sum        
+
+arr=list(map(int,input().split()))
+n=int(input())
+print(revarr(arr,n))
