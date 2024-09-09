@@ -1,0 +1,12 @@
+def maxsubst(s,arr):
+    maxlength=0
+    for i in arr:
+        if i in s:
+            maxlength=max(maxlength, len(i))
+    return maxlength
+
+
+s=input()
+n=int(input())
+arr=list(map(str,input().split()))
+print(maxsubst(s,arr))
