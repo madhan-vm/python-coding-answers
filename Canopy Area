@@ -1,0 +1,4 @@
+n=int(input())
+pi=3.14159
+area=pi*(n*n)
+print(round(area))
