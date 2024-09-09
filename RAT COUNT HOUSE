@@ -1,0 +1,18 @@
+def suff(x,y,n,arr):
+    total=x*y
+    sum=0
+    count=0
+    sufficient=0
+    if n==0:
+        return 0
+    for i in arr:
+        if total>sum:
+            sum+=i
+            count+=1
+    return count        
+
+x=int(input())
+y=int(input())
+n=int(input())
+arr=list(map(int,input().split()))[:n]
+print(suff(x,y,n,arr))
