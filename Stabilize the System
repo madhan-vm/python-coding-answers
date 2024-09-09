@@ -1,0 +1,4 @@
+n=input()
+s=str(n)
+s=s.replace('0','5')
+print(s)  
